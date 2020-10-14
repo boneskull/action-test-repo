@@ -1,15 +1,14 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  link-issues:
     runs-on: ubuntu-latest
     name: more linked issues!!
     steps:
-    - name: Hello world action step
+    - name: link extra issues
       id: linked-issues
       uses: boneskull/more-linked-issues-action@master
       with:
         github-token: '${{ secrets.GITHUB_TOKEN }}'
-    # Use the output from the `hello` step
     - name: Get the output 
       run: echo "${{ steps.linked-issues.outputs.links }}"
