@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: linked-issues
-      uses: boneskull/more-linked-issues-action@0.1.0
+      uses: boneskull/more-linked-issues-action@v0.1.0
       with:
         github-token: '${{ secrets.GITHUB_TOKEN }}'
     # Use the output from the `hello` step
